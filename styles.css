@@ -1,0 +1,129 @@
+body {
+    padding-top: 150px;
+}
+.container {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    height: 280px;
+    width: 100%;
+    max-width: 760px;
+    margin: auto;
+}
+.container > section {
+    display: inline-block;
+}
+.main, .secondary {
+    float: left;
+    display: inline-block;
+    padding:3%;
+}
+.main {
+    width: 58%;
+    padding: 7% 0% 0% 5%;
+}
+
+.secondary {
+    width: 28%;
+    padding: 5% 0% 0% 7%;
+}
+.main .sub-header  {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-height: 20px;        /* fallback */
+    max-height: 40px;       /* fallback */   
+    max-width: 270px;
+}
+.main .content {
+    margin-left: 90px;
+    border-right: 1px solid lightgray;
+}
+.main header {
+    text-overflow:    ellipsis;   /* IE, Safari (WebKit) */
+    overflow:hidden;              /* don't show excess chars */
+    white-space:nowrap;           /* force single line */
+    max-width: 260px;                 /* fixed width */
+}
+.secondary .sub-header {
+    display: none;
+}
+.secondary .card {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+footer {
+    clear: left;
+    border-top: 1px solid lightgray;
+    padding: 15px;
+}
+footer .group {
+    width: 38%;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    color: #693498;
+}
+
+footer .group:nth-child(3) {
+    width: 11%;
+    margin-left: 13%;
+}
+footer .group a {
+    display: block;
+}
+.avatar:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    color: white;
+}
+.main .card .pied-piper {
+    border-radius: 1000px;
+    background-color : #1485CC;
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-bottom : 70px;
+}
+
+.main .card .pied-piper:before {
+    
+    content: "\f2ae";
+    font-size: 31px;
+    
+    padding-left: 22px;
+    padding-top : 22px;
+}
+.paper-plane:before {
+    content: "\f1d8";
+    
+    padding-top: 11px;
+}
+.child:before {
+    content: "\f1ae";
+    padding-top: 11px;
+}
+.secondary .card .avatar {
+    border-radius: 1000px;
+    background-color : #1485CC;
+    width: 45px;
+    height: 45px;
+    content: "<i class='fa fa-pied-piper' aria-hidden='true'></i>";
+    margin : auto;
+}
+.card header {
+    font-weight: bold;
+    font-size: 16px;
+}
+.secondary .card header {
+    text-overflow:    ellipsis;   /* IE, Safari (WebKit) */
+    overflow:hidden;              /* don't show excess chars */
+    white-space:nowrap;           /* force single line */
+    max-width: 188px;                 /* fixed width */    
+}
+.main .card header {
+    
+    font-size: 24px;
+}
