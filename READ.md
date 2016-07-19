@@ -1,1 +1,3 @@
 # consoletest
+
+TEST file
